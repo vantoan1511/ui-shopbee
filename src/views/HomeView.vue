@@ -1,9 +1,7 @@
-<script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <header class="flex justify-center items-center">
+    <Button icon="pi pi-bars" label="Home"></Button>
+  </header>
 </template>
