@@ -7,8 +7,12 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AppFooter: typeof import('./src/components/AppFooter.vue')['default']
+    AppHeader: typeof import('./src/components/AppHeader.vue')['default']
     Button: typeof import('primevue/button')['default']
+    Card: typeof import('./src/components/Product/Card.vue')['default']
     Chip: typeof import('primevue/chip')['default']
+    Footer: typeof import('./src/components/Product/Card/Footer.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
@@ -16,12 +20,25 @@ declare module 'vue' {
     IconField: typeof import('primevue/iconfield')['default']
     IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
+    Image: typeof import('./src/components/Product/Promotion/Image.vue')['default']
+    Info: typeof import('./src/components/Product/Card/Info.vue')['default']
     InputIcon: typeof import('primevue/inputicon')['default']
     InputText: typeof import('primevue/inputtext')['default']
+    KeySelling: typeof import('./src/components/Product/KeySelling.vue')['default']
     Message: typeof import('primevue/message')['default']
+    ProductCard: typeof import('./src/components/Product/ProductCard.vue')['default']
+    ProductCardFooter: typeof import('./src/components/Product/Card/ProductCardFooter.vue')['default']
+    ProductCardInfo: typeof import('./src/components/ProductCardInfo.vue')['default']
+    ProductCardTitle: typeof import('./src/components/ProductCardTitle.vue')['default']
+    ProductKeySelling: typeof import('./src/components/ProductKeySelling.vue')['default']
+    Promotion: typeof import('./src/components/Product/Promotion.vue')['default']
+    PromotionImage: typeof import('./src/components/Product/Promotion/PromotionImage.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Select: typeof import('primevue/select')['default']
+    Tag: typeof import('primevue/tag')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
+    Title: typeof import('./src/components/Product/Card/Title.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }
